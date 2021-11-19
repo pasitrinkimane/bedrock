@@ -62,6 +62,7 @@ This project was build using Bedrock - a modern WordPress boilerplate which incl
 ## Important
 
 - `WP_ENV` if set `development` or `staging` - page indexing is DISABLED
+- `WP_ENV` if set `production` - plugins updates are DISABLED
 
 ## Documentation
 
