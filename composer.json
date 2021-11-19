@@ -39,7 +39,13 @@
     "roots/bedrock-disallow-indexing": "^2.0",
     "roots/wordpress": "5.8.2",
     "roots/wp-config": "1.0.0",
-    "roots/wp-password-bcrypt": "1.1.0"
+    "roots/wp-password-bcrypt": "1.1.0",
+    "johnbillion/extended-cpts": "^4.5",
+    "newcool/qtranslate-xt": "dev-master",
+    "wpackagist-plugin/simple-custom-post-order": "^2.5",
+    "wpackagist-plugin/duplicate-post": "^4.1",
+    "wpackagist-plugin/loco-translate": "2.5.3",
+    "wpackagist-plugin/advanced-post-block": "1.4.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.6.0",
