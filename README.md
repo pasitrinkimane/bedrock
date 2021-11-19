@@ -29,7 +29,7 @@
 </p>
 
 <p align="center">
-  <a href="https://roots.io">Official Website</a> | <a href="https://roots.io/docs/bedrock/master/installation/">Documentation</a> | <a href="CHANGELOG.md">Change Log</a>
+  <a href="https://roots.io">Official Website</a> | <a href="https://roots.io/docs/bedrock/master/installation/">Documentation 123</a> | <a href="CHANGELOG.md">Change Log</a>
 </p>
 
 ## Supporting
