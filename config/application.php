@@ -19,6 +19,11 @@ use function Env\env;
 $root_dir = dirname(__DIR__);
 
 /**
+ * Composer Vendor directory
+ */
+define('VENDOR_DIR', $root_dir . '/vendor');
+
+/**
  * Document Root
  *
  * @var string
