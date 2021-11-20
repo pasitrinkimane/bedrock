@@ -33,18 +33,14 @@ if (process.env.MIX_BUILD === 'child') {
     mix.setPublicPath('./web/app/themes/growtype-child/public');
     mix.setResourceRoot('./../')
 
-    mix.autoload({
-        jquery: ['$', 'window.jQuery']
-    })
-
     mix
         .js('web/app/themes/growtype-child/resources/scripts/app-child.js', 'scripts')
 
     mix
         .copyDirectory('web/app/themes/growtype-child/resources/images', 'web/app/themes/growtype-child/public/images')
         .copyDirectory('web/app/themes/growtype-child/resources/video', 'web/app/themes/growtype-child/public/video')
-        .copyDirectory('web/app/themes/growtype-child/resources/icons', 'web/app/themes/growtype-child/public/icons');
-    // .copyDirectory('web/app/themes/growtype-child/resources/fonts', 'web/app/themes/growtype-child/public/fonts');
+        .copyDirectory('web/app/themes/growtype-child/resources/icons', 'web/app/themes/growtype-child/public/icons')
+        .copyDirectory('web/app/themes/growtype-child/resources/fonts', 'web/app/themes/growtype-child/public/fonts');
 
     mix
         .sourceMaps()
@@ -57,10 +53,6 @@ if (process.env.MIX_BUILD === 'child') {
     mix.setPublicPath('./web/app/themes/growtype/public');
     mix.setResourceRoot('./../')
 
-// mix
-//     .setPublicPath('./public')
-// .browserSync('sage.test');
-
     mix
         .sass('web/app/themes/growtype/resources/styles/app.scss', 'styles', sassOptions)
 
@@ -70,11 +62,6 @@ if (process.env.MIX_BUILD === 'child') {
         .sass('web/app/themes/growtype/resources/styles/admin-standard-editor.scss', 'styles', sassOptions)
 
         .sass('web/app/themes/growtype/resources/styles/plugins/woocommerce/woocommerce.scss', 'styles', sassOptions)
-
-// mix.options({
-//     processCssUrls: false,
-//     postCss: [require('tailwindcss')],
-// });
 
     mix.autoload({
         jquery: ['$', 'window.jQuery']
@@ -91,8 +78,7 @@ if (process.env.MIX_BUILD === 'child') {
 
         .js('web/app/themes/growtype/resources/scripts/plugins/acf/acf-main.js', 'scripts')
         .js('web/app/themes/growtype/resources/scripts/plugins/slick-carousel/slick-main.js', 'scripts')
-
-        // .extract(['axios', 'jquery', 'vue', 'slick-carousel', '@fancyapps/fancybox'])
+        
         .version();
 
     mix
