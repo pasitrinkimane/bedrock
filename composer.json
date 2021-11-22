@@ -44,7 +44,7 @@
     "newcool/qtranslate-xt": "dev-master",
     "wpackagist-plugin/simple-custom-post-order": "^2.5",
     "wpackagist-plugin/duplicate-post": "^4.1",
-    "wpackagist-plugin/loco-translate": "2.5.3",
+    "wpackagist-plugin/loco-translate": "^2.5.3",
     "wpackagist-plugin/advanced-post-block": "1.4.0"
   },
   "require-dev": {

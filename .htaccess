@@ -1,5 +1,4 @@
 <IfModule mod_rewrite.c>
-   Header add Access-Control-Allow-Origin "*"
    RewriteEngine on
    RewriteBase /
    RewriteRule    ^$ web/ [L]
