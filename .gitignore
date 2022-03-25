@@ -24,6 +24,5 @@ web/wp
 wp-cli.local.yml
 node_modules
 .idea
-web/app/themes/growtype-child
 web/app/themes/growtype
 web/app/mu-plugins

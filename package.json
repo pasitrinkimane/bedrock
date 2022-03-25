@@ -26,7 +26,6 @@
     "build": "mix",
     "build:production": "mix --production",
     "watch": "mix watch",
-    "watch-child": "MIX_BUILD=child mix watch",
     "hot": "mix watch --hot",
     "clear": "wp acorn optimize:clear",
     "test": "npm run lint",

@@ -1,0 +1,9 @@
+@import "./../../../growtype/resources/styles/common/mixins";
+@import "common/variables";
+
+.block-editor {
+  .is-root-container {
+    @import "pages/home";
+    @import "common/typography";
+  }
+}

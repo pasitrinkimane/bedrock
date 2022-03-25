@@ -28,6 +28,9 @@
       "type": "composer",
       "url": "https://wpackagist.org",
       "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
+    },
+    {
+      "type": "composer", "url": "https://repo.packagist.com/newcoolstudio/"
     }
   ],
   "require": {
@@ -48,7 +51,8 @@
     "wpackagist-plugin/advanced-post-block": "1.6.5",
     "wpackagist-plugin/carousel-block": "1.0.7",
     "wpackagist-plugin/woocommerce": "6.2.1",
-    "newcool/acf": "dev-master"
+    "newcool/acf": "dev-master",
+    "newcoolstudio/growtype": "dev-master"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.6.0",
