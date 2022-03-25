@@ -104,17 +104,22 @@ Config::define('NONCE_SALT', env('NONCE_SALT'));
 Config::define('AUTOMATIC_UPDATER_DISABLED', true);
 Config::define('DISABLE_WP_CRON', env('DISABLE_WP_CRON') ?: false);
 // Disable the plugin and theme file editor in the admin
-Config::define('DISALLOW_FILE_EDIT', true);
+Config::define('DISALLOW_FILE_EDIT', env('DISALLOW_FILE_EDIT') ?: true);
 // Disable plugin and theme updates and installation from the admin
-Config::define('DISALLOW_FILE_MODS', true);
+Config::define('DISALLOW_FILE_MODS', env('DISALLOW_FILE_MODS') ?: true);
 // Limit the number of post revisions that Wordpress stores (true (default WP): store every revision)
 Config::define('WP_POST_REVISIONS', env('WP_POST_REVISIONS') ?: true);
+
+/**
+ * Allow unfiltered uploads
+ */
+define('ALLOW_UNFILTERED_UPLOADS', env('ALLOW_UNFILTERED_UPLOADS') ?: false);
 
 /**
  * Debugging Settings
  */
 Config::define('WP_DEBUG_DISPLAY', false);
-Config::define('WP_DEBUG_LOG', env('WP_DEBUG_LOG') ?? false);
+Config::define('WP_DEBUG_LOG', env('WP_DEBUG_LOG') ?: false);
 Config::define('SCRIPT_DEBUG', false);
 ini_set('display_errors', '0');
 
