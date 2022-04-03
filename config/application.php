@@ -113,7 +113,7 @@ Config::define('WP_POST_REVISIONS', env('WP_POST_REVISIONS') ?: true);
 /**
  * Allow unfiltered uploads
  */
-define('ALLOW_UNFILTERED_UPLOADS', env('ALLOW_UNFILTERED_UPLOADS') ?: false);
+define('ALLOW_UNFILTERED_UPLOADS', env('ALLOW_UNFILTERED_UPLOADS') ?: true);
 
 /**
  * Debugging Settings
