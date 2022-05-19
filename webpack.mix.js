@@ -28,6 +28,7 @@ if (process.env.STATIC_URL !== undefined) {
  */
 mix
     .sass('web/app/themes/growtype-child/resources/styles/app-child.scss', 'styles', sassOptions)
+    .sass('web/app/themes/growtype-child/resources/styles/backend-block-editor-child.scss', 'styles', sassOptions)
 
 mix.setPublicPath('./web/app/themes/growtype-child/public');
 mix.setResourceRoot('./../')
