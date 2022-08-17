@@ -40,7 +40,7 @@
     "oscarotero/env": "^2.1",
     "roots/bedrock-autoloader": "^1.0",
     "roots/bedrock-disallow-indexing": "^2.0",
-    "roots/wordpress": "6.0",
+    "roots/wordpress": "6.0.1",
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.1.0",
     "johnbillion/extended-cpts": "^4.5",
@@ -48,9 +48,10 @@
     "wpackagist-plugin/simple-custom-post-order": "^2.5",
     "wpackagist-plugin/duplicate-post": "^4.4",
     "wpackagist-plugin/loco-translate": "^2.5.8",
-    "wpackagist-plugin/carousel-block": "1.0.7",
-    "wpackagist-plugin/woocommerce": "6.3.1",
-    "newcoolstudio/growtype": "dev-master"
+    "wpackagist-plugin/carousel-block": "1.0.8",
+    "wpackagist-plugin/woocommerce": "6.8.0",
+    "newcoolstudio/growtype": "dev-master",
+    "wpackagist-plugin/wp-optimize": "^3.2"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.6.0",
