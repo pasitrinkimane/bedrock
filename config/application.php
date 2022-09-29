@@ -78,7 +78,7 @@ Config::define('DB_COLLATE', '');
 $table_prefix = env('DB_PREFIX') ?: 'wp_';
 
 if (env('DATABASE_URL')) {
-    $dsn = (object) parse_url(env('DATABASE_URL'));
+    $dsn = (object)parse_url(env('DATABASE_URL'));
 
     Config::define('DB_NAME', substr($dsn->path, 1));
     Config::define('DB_USER', $dsn->user);
@@ -101,27 +101,32 @@ Config::define('NONCE_SALT', env('NONCE_SALT'));
 /**
  * Custom Settings
  */
-Config::define('AUTOMATIC_UPDATER_DISABLED', true);
-Config::define('DISABLE_WP_CRON', env('DISABLE_WP_CRON') ?: false);
+// Disable automatic updates
+Config::define('AUTOMATIC_UPDATER_DISABLED', env('DISABLE_AUTOMATIC_UPDATER') ?? true);
+// Disable wpcron
+Config::define('DISABLE_WP_CRON', env('DISABLE_WP_CRON') ?? false);
 // Disable the plugin and theme file editor in the admin
-Config::define('DISALLOW_FILE_EDIT', env('DISALLOW_FILE_EDIT') ?: true);
+Config::define('DISALLOW_FILE_EDIT', env('DISALLOW_FILE_EDIT') ?? true);
 // Disable plugin and theme updates and installation from the admin
-Config::define('DISALLOW_FILE_MODS', env('DISALLOW_FILE_MODS') ?: true);
+Config::define('DISALLOW_FILE_MODS', env('DISALLOW_FILE_MODS') ?? true);
 // Limit the number of post revisions that Wordpress stores (true (default WP): store every revision)
-Config::define('WP_POST_REVISIONS', env('WP_POST_REVISIONS') ?: true);
+Config::define('WP_POST_REVISIONS', env('WP_POST_REVISIONS') ?? true);
 
 /**
  * Allow unfiltered uploads
  */
-define('ALLOW_UNFILTERED_UPLOADS', env('ALLOW_UNFILTERED_UPLOADS') ?: true);
+define('ALLOW_UNFILTERED_UPLOADS', env('ALLOW_UNFILTERED_UPLOADS') ?? true);
 
 /**
  * Debugging Settings
  */
-Config::define('WP_DEBUG_DISPLAY', false);
-Config::define('WP_DEBUG_LOG', env('WP_DEBUG_LOG') ?: false);
-Config::define('SCRIPT_DEBUG', false);
-ini_set('display_errors', '0');
+if (env('WP_DEBUG_PRODUCTION')) {
+    Config::define('WP_DEBUG_DISPLAY', env('WP_DEBUG_DISPLAY') ?? false);
+    Config::define('WP_DEBUG_LOG', env('WP_DEBUG_LOG') ?? false);
+    Config::define('SCRIPT_DEBUG', env('SCRIPT_DEBUG') ?? false);
+
+    ini_set('display_errors', env('display_errors') ?? '0');
+}
 
 /**
  * Allow WordPress to detect HTTPS when used behind a reverse proxy or a load balancer
