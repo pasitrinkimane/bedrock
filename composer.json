@@ -51,7 +51,8 @@
     "wpackagist-plugin/wp-optimize": "^3.2",
     "wpackagist-plugin/wordpress-seo":"19.5.1",
     "wpackagist-plugin/contact-form-7": "^5.4",
-    "wpackagist-plugin/flamingo": "^2.2"
+    "wpackagist-plugin/flamingo": "^2.2",
+    "newcool/growtype-post": "dev-main"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.6.0",
