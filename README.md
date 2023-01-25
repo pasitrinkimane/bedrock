@@ -1,6 +1,6 @@
 ## Overview
 
-This project was build using Bedrock - a modern WordPress boilerplate which includes extended WP development features.
+A modern WordPress boilerplate which includes extended WP development features.
 
 ## Features
 
