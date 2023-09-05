@@ -1,12 +1,5 @@
 <?php
 
-function child_theme_scripts()
-{
-
-}
-
-add_action('wp_enqueue_scripts', 'child_theme_scripts');
-
 /**
  * Helper function for prettying up errors
  * @param string $message
