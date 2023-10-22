@@ -129,6 +129,11 @@ if (env('WP_DEBUG_PRODUCTION')) {
 }
 
 /**
+ * Cron Settings
+ */
+Config::define('WP_CRON_LOCK_TIMEOUT', !empty(getenv('WP_CRON_LOCK_TIMEOUT')) ? getenv('WP_CRON_LOCK_TIMEOUT') : 60);
+
+/**
  * Allow WordPress to detect HTTPS when used behind a reverse proxy or a load balancer
  * See https://codex.wordpress.org/Function_Reference/is_ssl#Notes
  */
