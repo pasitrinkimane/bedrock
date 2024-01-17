@@ -121,8 +121,9 @@ define('ALLOW_UNFILTERED_UPLOADS', env('ALLOW_UNFILTERED_UPLOADS', true));
  * Debugging Settings
  */
 if (env('WP_DEBUG_PRODUCTION')) {
+    Config::define('WP_DEBUG', env('WP_DEBUG', true));
     Config::define('WP_DEBUG_DISPLAY', env('WP_DEBUG_DISPLAY', false));
-    Config::define('WP_DEBUG_LOG', env('WP_DEBUG_LOG', false));
+    Config::define('WP_DEBUG_LOG', env('WP_DEBUG_LOG', true));
     Config::define('SCRIPT_DEBUG', env('SCRIPT_DEBUG', false));
 
     ini_set('display_errors', env('display_errors', 0));
